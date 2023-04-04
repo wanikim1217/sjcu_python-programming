@@ -148,7 +148,7 @@ var = stack.pop()
 print(var)
 print(stack)
 
-# 참고
+# 참고 _Queue
 from collections import deque
 queue = deque(["chris", "tommy", "harry"])
 queue.append("hans")
