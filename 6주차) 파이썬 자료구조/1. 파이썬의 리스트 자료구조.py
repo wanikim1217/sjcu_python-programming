@@ -133,7 +133,7 @@ except StopIteration:
     
 #---------------------------------------------------------------------------
 """
-# 리스트의 활용 _ 스택
+# 리스트의 활용 _ Stack
 """
 stack = [1, 2, 3]
 stack.append(4)
@@ -148,7 +148,10 @@ var = stack.pop()
 print(var)
 print(stack)
 
-# 참고 _Queue
+#---------------------------------------------------------------------------
+"""
+# 리스트의 활용 _ _Queue
+"""
 from collections import deque
 queue = deque(["chris", "tommy", "harry"])
 queue.append("hans")
