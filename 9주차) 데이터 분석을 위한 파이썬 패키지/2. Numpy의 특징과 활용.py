@@ -88,5 +88,5 @@ print(array)
 array = arrayA / arrayB
 print(array)
 
-result = np.dot(arrayA, arrayB)
+result = np.dot(arrayA, arrayB) # np.dot = 행렬 곱
 print(result)
