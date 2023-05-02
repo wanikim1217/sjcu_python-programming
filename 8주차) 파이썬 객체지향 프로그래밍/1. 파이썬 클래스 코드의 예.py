@@ -92,4 +92,64 @@ class Animal:
     def __init__(self):
         self._name = 'Animal'
         self.age = 0
+        
+    def __str__(self):
+        return 'name: ' + self._name + ', age: ' + str(self.age)
+    
+    def getName(self):
+        return self._name
+    
+    def setName(self, name):
+        self._name = name
+        
+    def getAge(self):
+        return self.age
+    
+    def setAge(self, age):
+        self.age = age
+        
+    def say(self):
+        print('Animal Hello')
+        
+animal = Animal()
+print(animal)
+
+animal.setName('MyAnimal')
+print(animal.getName())
+print(animal._name)
+
+animal.setAge(10)
+print(animal.getAge())
+animal.say()
+print()
+
+#------------------------------------
+# 상속
+class Dog(Animal): # Dog클래스를 만들건데, 부모 클래스인 Animal 클래스로부터 상속받겠다는 의미
+    def __init__(self):
+        super().__init__() # 클래스 안에서 super가 들어가면, 부모 클래스를 불러온다는 의미를 지닌다.
+        self.name = 'Dog'
+        self.age = 10
+        
+dog = Dog()
+print(dog)
+dog.say()
+print()
+
+#------------------------------------
+class Cat(Animal):
+    def __init__(self):
+        super().__init__()
+        self.name = 'Cat'
+        self.age = 20
+        
+    def say(self, message): # 재정의
+        super().say()
+        print('Cat ' + message)
+        
+cat = Cat()
+print(cat)
+cat.say('Hi~~~')
+print()
+
 #---------------------------------------------------------------------------
