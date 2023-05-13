@@ -32,7 +32,7 @@ for one in results:
 time.sleep(1)
 
 results[0].click()
-time.sleep(2)
+time.sleep(10)
 
 # WebDriver를 종료합니다. (브라우저 닫기)
 driver.quit()
