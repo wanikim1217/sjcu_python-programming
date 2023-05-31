@@ -1,0 +1,16 @@
+[파이썬을 활용한 자동화 구현 - 사무자동화]
+* Ref : https://wikidocs.net/book/6353
+
+
+ㅇ 워드 파일 다루기
+  - pip install python-docx
+  - https://python-docx.readthedocs.io/en/latest/user/quickstart.html
+
+ㅇ 엑셀 파일 다루기
+  - pip install openpyxl
+  - https://openpyxl.readthedocs.io/en/stable/tutorial.html 
+
+
+ㅇ 엑셀을 PDF로 저장하기
+  - pip install pywin32
+  - https://pypi.org/project/pywin32/ 
